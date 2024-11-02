@@ -1,8 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: "/testing-transactions/",
-});
+  base: command === "build" ? "/testing-transactions/" : "/", // Only set the base path in production
+}));
