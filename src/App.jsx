@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Buttons from "./components/Buttons";
 import Form from "./components/Form";
 import Header from "./components/Header";
 
@@ -10,7 +9,6 @@ const App = () => {
     <div className="card-main">
       <Header actions={actions} />
       <Form actions={actions} />
-      <Buttons />
     </div>
   );
 };

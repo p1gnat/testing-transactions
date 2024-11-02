@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import FormInput from "./FormInput";
+import Buttons from "./Buttons";
 import { yupResolver } from "@hookform/resolvers/yup";
 import HalfFormInput from "./HalfFormInput";
 import { useState } from "react";
@@ -45,6 +46,8 @@ const Form = ({ actions }) => {
         <FormInput register={register} errors={errors} id={"message"}>
           Сообщение покупателю
         </FormInput>
+
+        <Buttons />
 
         {submittedData && (
           <div className="submitted-data">
