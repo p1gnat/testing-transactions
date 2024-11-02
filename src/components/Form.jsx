@@ -3,8 +3,6 @@ import FormInput from "./FormInput";
 import { yupResolver } from "@hookform/resolvers/yup";
 import HalfFormInput from "./HalfFormInput";
 import { useState } from "react";
-import Buttons from "./Buttons";
-import Header from "./Header";
 import { schema } from "./logic/myschema";
 import { onSubmit } from "./logic/onsubmit";
 
